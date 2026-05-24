@@ -5,7 +5,7 @@ from datetime import datetime
 
 app = Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY", "dev-secret-key-change-me")
-DATABASE = os.environ.get("DATABASE_PATH", "database.db")
+DATABASE = os.environ.get("/", "database.db")
 
 
 def get_db():
